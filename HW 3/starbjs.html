@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--Bemin Shaker, 2/19/2020, Software Engineering-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Starbucks, Los Angeles</title>
+</head>
+
+<body>
+<h1 id="uniquehd">Welcome to Starbucks, Los Angeles</h1>
+  <p>Starbucks Corporation is an American multinational chain of coffeehouses
+  and roastery reserves headquartered in Seattle, Washington. As the world's largest
+  coffeehouse chain, Starbucks is seen to be the main representation of the United States'second wave of coffee culture. As of early 2020, the company operates over 30,000 locations worldwide in more than 70 countries. Starbucks locations serve hot and cold drinks,whole-bean coffee, microground instant coffee known as VIA, espresso, caffe latte, full- and loose-leaf teas including Teavana tea products, Evolution Fresh juices, Frappuccino beverages, La Boulange pastries, and snacks including items such as chips and crackers; some offerings (including their annual fall launch of the Pumpkin Spice Latte) are seasonal or specific to the locality of the store.</p>
+  <h3 >Our main menu categories are: </h3>
+  <p id="categoriesList"></p>
+    
+    <script>
+      var categories = ["Coffee", "Food", "At Home Coffee"];
+      var text = "";
+      var i;
+      for (i=0; i < categories.length; i++) {
+        text += " - " + categories[i] + "<br>";
+      }
+
+      document.getElementById("categoriesList").innerHTML = text;
+          
+      </script>
+  
+
+  <h3>Our customers’ top three favorites Hot Coffees are: </h3>
+     <!--use JavaScript array to list the menu in this category (i.e., replace unordered list)-->
+     <p id="coffeesList"></p>
+    <script>
+      var coffees = ["Coffee Americano", "Cappuccino", "Expresso"];
+      var text = "";
+      var i; 
+      for (i=0; i < coffees.length; i++) {
+        text += " - " + coffees[i] + "<br>";
+      }
+
+      document.getElementById("coffeesList").innerHTML = text;
+    </script>
+  
+  <h3>Why not give our delicious food menu a try also?</h3>
+     <p id="menuList"></p>
+     <script>
+       var menuItems = ["Ham and Swiss Panini", "Cripsy Grilled Cheese Sandwhich", "Chicken Caprese Panini"];
+       var text ="";
+       var i;
+       for (i=0; i < menuItems.length; i++) {
+         text += " - " + menuItems[i] + "<br>";
+       }
+
+       document.getElementById("menuList").innerHTML = text;
+
+     </script>
+
+  <h4 id=priceheader>Food Price List</h4>
+  <table class="center">
+    <tr>
+      <th>Item Number</th>
+      <th>Food</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Ham and Swiss Panini</td>
+      <td>$9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cripsy Grilled Cheese Sandwhich</td>
+      <td>$15</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Chicken Caprese Panini</td>
+      <td>$12</td>
+    </tr>
+  </table>
+</body>
+</html>

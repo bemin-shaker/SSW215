@@ -1,0 +1,44 @@
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: RGB(6, 97, 4);
+  margin-left: 40px;
+  text-align: center;
+}
+
+P {
+  text-align: justify;
+}
+
+h3 {
+  color: #066104;
+}
+
+#secondHeader {
+  color: hsl(119°, 92%, 20%);
+}
+
+#thirdHeader {
+  color: green;
+}
+
+.outofstock {
+  text-decoration: line-through;
+}
+
+.soonOutofstock {
+  color: red;
+}
+
+.center {
+  border: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#priceheader {
+  text-align: center;
+  color: maroon;
+}

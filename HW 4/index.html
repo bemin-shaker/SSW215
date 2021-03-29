@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--Bemin Shaker, Software Engineering, March 1 2021-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducky Fries, Stevens Campus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ducky Fries, Stevens Campus</h1>
+    <img src="profile.jpg" alt="">
+    <p>I am Bemin Shaker, the CEO of Ducky Fries located at Stevens Institute of Technology in Hoboken, NJ.
+        I major in Software Engineering.
+    </p>
+
+    <h3 id="breakfast-header">Breakfast Menu</h3>
+    <table>
+        <tr>
+            <th>Item #</th>
+            <th>Item</th>
+            <th id="currency">Price Dollar</th>
+        </tr>
+        <tr>
+            <td>1</td>
+           <td>Bagel</td>
+           <td id="itemPrice1">1.50</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Coffee</td>
+            <td id="itemPrice2">2.00</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Donut</td>
+            <td id="itemPrice3">1.00</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Eggs</td>
+            <td id="itemPrice4">2.50</td>
+        </tr>
+    </table>
+
+    <button onClick="priceConverter()">Dollar to Pound</button>
+
+    <script>
+
+        function priceConverter() {
+            var poundValue = [1.50*0.71, 2.00*0.71, 1.00*0.71, 2.50*0.71];
+            
+            var i;
+            for (i=0; i<poundValue.length; i++) {
+                document.getElementById("currency").innerHTML = "Price Pound";
+                document.getElementById("itemPrice1").innerHTML = poundValue[0].toFixed(2);
+                document.getElementById("itemPrice2").innerHTML = poundValue[1].toFixed(2);
+                document.getElementById("itemPrice3").innerHTML = poundValue[2].toFixed(2);
+                document.getElementById("itemPrice4").innerHTML = poundValue[3].toFixed(2);
+            }
+
+        }
+        
+    </script>
+
+    <h3 id="lunch-header">Lunch Menu</h3>
+    <table>
+        <tr>
+            <th>Item #</th>
+            <th>Item</th>
+            <th id="currency2">Price Dollar</th>
+        </tr>
+        <tr>
+            <td>1</td>
+           <td>Pizza</td>
+           <td id="itemPrice5">2.50</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Hamburger</td>
+            <td id="itemPrice6">1.75</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>French Fries</td>
+            <td id="itemPrice7">1.25</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Chicken Nuggets</td>
+            <td id="itemPrice8">3.50</td>
+        </tr>
+    </table>
+
+    <button onClick="priceConverter2()">Dollar to Pound</button>
+
+    <script>
+
+        function priceConverter2() {
+
+            var poundValue = [2.50*0.71, 1.75*0.71, 1.25*0.71, 3.50*0.71];
+            
+            var i;
+            for (i=0; i<poundValue.length; i++) {
+                document.getElementById("currency2").innerHTML = "Price Pound";
+                document.getElementById("itemPrice5").innerHTML = poundValue[0].toFixed(2);
+                document.getElementById("itemPrice6").innerHTML = poundValue[1].toFixed(2);
+                document.getElementById("itemPrice7").innerHTML = poundValue[2].toFixed(2);
+                document.getElementById("itemPrice8").innerHTML = poundValue[3].toFixed(2);
+            }
+        }
+        
+    </script>
+
+    <h3 id="dinner-header">Dinner Menu</h3>
+    <table>
+        <tr>
+            <th>Item #</th>
+            <th>Item</th>
+            <th id="currency3">Price Dollar</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Rice</td>
+            <td id="itemPrice9">$3.50</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Potato</td>
+            <td id="itemPrice10">$2.99</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Beans</td>
+            <td id="itemPrice11">$4.75</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Fish</td>
+            <td id="itemPrice12">$5.50</td>
+        </tr>
+    </table>
+
+    <button onClick="priceConverter3()">Dollar to Pound</button>
+
+
+    <script>
+
+        function priceConverter3() {
+
+            var poundValue = [3.50*0.71, 2.99*0.71, 4.75*0.71, 5.50*0.71];
+            
+            var i;
+            for (i=0; i<poundValue.length; i++) {
+                document.getElementById("currency3").innerHTML = "Price Pound";
+                document.getElementById("itemPrice9").innerHTML = poundValue[0].toFixed(2);
+                document.getElementById("itemPrice10").innerHTML = poundValue[1].toFixed(2);
+                document.getElementById("itemPrice11").innerHTML = poundValue[2].toFixed(2);
+                document.getElementById("itemPrice12").innerHTML = poundValue[3].toFixed(2);
+            }
+        }
+        
+    </script>
+
+    <br>
+
+    <p id="orderPlaced"></p>
+
+    <button onclick="placeOrder()">Place Order</button>
+    
+   
+    
+    <script>
+        var text = "We’ve received your order. Your order will be ready for pick up in 5 minutes"
+        function placeOrder() {
+            document.getElementById("orderPlaced").innerHTML = text;
+        }
+    </script>
+
+</body>
+</html>

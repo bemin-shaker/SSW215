@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table id="ssw215a"></table>
+
+<script>
+
+var leftColumn = ["a", "b", "c", "d"]
+
+var rightColumn = [1, 2, 3, 4]
+
+var tableText = ""
+
+function generateHTMLTable(leftColumn) {
+
+
+text = "";
+
+for (i=0; i < leftColumn.length; i++){
+
+   text += "<tr>" + "<th>" + leftColumn[i] + "</th>" + + "<th>" + rightColumn[i] + "</th>" + "</tr>";
+
+}
+
+return text;
+
+}
+
+tableText = generateHTMLTable(leftColumn, rightColumn)
+document.getElementById("ssw215a").innerHTML = tableText
+
+</script>
+    
+</body>
+</html>
