@@ -21,10 +21,10 @@ def generateSequence(x, arr, current_sum, current_index):
         num += 1
 
 
-def generate(x):
+def generateSeq(x):
     arr = [0] * x
     generateSequence(x, arr, 0, 0)
 
 
 x = 4
-generate(x)
+generateSeq(x)
